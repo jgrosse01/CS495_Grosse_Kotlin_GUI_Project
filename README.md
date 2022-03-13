@@ -24,7 +24,8 @@ and the following commands on Windows:
 In the case that the command is not found, in the same directory, elevate the permissions of "gradlew" (without quotes) to include execution. This will look something like the following for mac or linux "chmod -x gradlew" (without quotes). This is by no means a comprehensive guide to changing file permissions and you should refer to a proper online guide for this process.
 
 IMPORTANT RUN NOTES:
-1. Ensure you are running an admin terminal or you elevate the permission level of the command depending on your operating system.
+1. Ensure you are running an admin terminal or you elevate the permission level of the command (both to include execution and to elevate at the command level e.g. 
+"sudo") depending on your operating system.
 2. If there is a Java version error, ensure that you are using Oracle OpenJDK version 17.0.1.
 3. Ensure you elevate the permission of the terminal (Windows) or command (MacOS/Linux).
 
