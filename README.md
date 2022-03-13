@@ -9,8 +9,21 @@ For this project, I developed a password generator application. I tought myself 
 The code included is functional and runs while accounting for input validation as there are no free-input fields included; therefore, there cannot be invalid inputs.
 
 
-In order to run the program, clone the repository, and, in a terminal window, navigate to the top layer of the repository folder on your computer. Then run the following command (without quotation marks) (IMPORTANT! Ensure you are running an admin terminal or you elevate the permission level of the command depending on your operating system):
+In order to run the program, clone the repository, and, in a terminal window, navigate to the top layer of the repository folder on your computer. Then run the following commands on MacOS/Linux (without quotation marks):
+
+"./gradlew build"
 
 "./gradlew run"
 
+and the following commands on Windows:
+
+".\gradlew build"
+
+".\gradlew run"
+
 In the case that the command is not found, in the same directory, elevate the permissions of "gradlew" (without quotes) to include execution. This will look something like the following for mac or linux "chmod -x gradlew" (without quotes). This is by no means a comprehensive guide to changing file permissions and you should refer to a proper online guide for this process.
+
+IMPORTANT RUN NOTES:
+1. Ensure you are running an admin terminal or you elevate the permission level of the command depending on your operating system.
+2. If there is a Java version error, ensure that you are using Oracle OpenJDK version 17.0.1.
+3. Ensure you elevate the permission of the terminal (Windows) or command (MacOS/Linux).
