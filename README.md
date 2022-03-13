@@ -27,3 +27,6 @@ IMPORTANT RUN NOTES:
 1. Ensure you are running an admin terminal or you elevate the permission level of the command depending on your operating system.
 2. If there is a Java version error, ensure that you are using Oracle OpenJDK version 17.0.1.
 3. Ensure you elevate the permission of the terminal (Windows) or command (MacOS/Linux).
+
+Extra Note because I worked extra hard and this is my first time using gradle for anything:
+You do not need gradle to run this program, the wrapper is built properly and the proper java runtime version is supposed to be downloaded automatically to use at runtime. (This is why it takes so long to build/run the first time).
