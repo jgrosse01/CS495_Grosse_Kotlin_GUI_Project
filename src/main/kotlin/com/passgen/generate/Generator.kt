@@ -6,6 +6,7 @@ import kotlin.random.Random
 private val alphaSet = ('a'..'z').toList() // need to cast here to get list instead of CharRange object
 private val alphaNumSet = ('a'..'z') + ('0'..'9')
 private val alphaNumSymSet = ('a'..'z') + ('0'..'9') + ('!'..'-')
+private val alphaSymSet = ('a'..'z') + ('!'..'-')
 
 /**
  * A function that generates a password.
@@ -26,9 +27,14 @@ fun generatePassword(pwLen: Int, num: Boolean, sym: Boolean, caps: Boolean): Str
         // otherwise, just with alpha and num
         return(generatePassword(pwLen, alphaNumSet, caps))
     }
+    // if not num but sym then use alphaSymSet
+    else if (sym) {
+        return(generatePassword(pwLen, alphaSymSet, caps))
+    }
     // if no numbers or symbols, just return password with alpha
     return(generatePassword(pwLen, alphaSet, caps))
 }
+
 
 // helper method to generate a random password given the passed character set, the length,
 // and the boolean for capital letters
